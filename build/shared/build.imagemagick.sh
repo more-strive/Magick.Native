@@ -30,7 +30,7 @@ buildImageMagick() {
     unset enable_64bit_channel_masks
   fi
 
-  $CONFIGURE $CONFIGURE_OPTIONS --disable-shared --disable-opencl --disable-dpc --disable-assert --disable-deprecated --enable-static --enable-delegate-build --without-magick-plus-plus --without-utilities --disable-docs --without-x --without-perl --without-python --without-magick-plus-plus --with-rsvg --with-jxl --with-quantum-depth=$depth --enable-hdri=$hdri $enable_64bit_channel_masks $disable_openmp $IMAGEMAGICK_OPTIONS --prefix=/tmp/ImageMagick
+  $CONFIGURE $CONFIGURE_OPTIONS --disable-shared --disable-opencl --disable-dpc --disable-assert --disable-deprecated --enable-static --enable-delegate-build --without-magick-plus-plus --without-utilities --disable-docs --without-x --without-perl --without-python --without-magick-plus-plus --with-quantum-depth=$depth --enable-hdri=$hdri $enable_64bit_channel_masks $disable_openmp $IMAGEMAGICK_OPTIONS --prefix=/tmp/ImageMagick
   $MAKE install
 }
 

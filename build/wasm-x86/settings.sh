@@ -19,7 +19,7 @@ export CMAKE_OPTIONS=""
 export CONFIGURE="emconfigure ./configure"
 export CONFIGURE_OPTIONS=""
 export EXTENSION="js"
-export IMAGEMAGICK_OPTIONS="--disable-openmp --without-threads --without-bzlib --without-lzma"
+export IMAGEMAGICK_OPTIONS="--disable-openmp --without-threads --without-bzlib --without-lzma --without-raw --without-heic --without-jxl --without-webp --without-tiff --without-png --without-openjp2 --without-freetype --without-fontconfig --without-rsvg --without-xml --without-zstd --without-lqr --without-openexr"
 export MAKE="emmake make -j$(nproc)"
 export PLATFORM=WASM
 
